@@ -14,11 +14,11 @@ Objects are unordered named collections for properties and methods.
     3. writable
     4. enumerable
 
-> **NOTE-1**
-> Everything in Javascript is an object, which means even primitive values (except **null** and **undefined**) have built-in methods and behave like an object.
-> primitive value is not an actual object but once we call a method on it, Javascript behind the scenes adds a wrapper to it and you can actually create it as an object.
+> **NOTE-1** <br />
+> Everything in Javascript is an object, which means even primitive values (except **null** and **undefined**) have built-in methods and behave like an object.<br />
+> Primitive value is not an actual object but once we call a method on it, Javascript behind the scenes adds a wrapper to it and you can actually create it as an object.
 
-> **NOTE-2**
+> **NOTE-2** <br />
 > **window** is  absolute parent object. basically there is nothing above on it in DOM, so instead of using `window.property` or `window.method()`, we can directy call `peroperty` or `method()`.
 
 
@@ -36,7 +36,7 @@ let book = {
 };
 ```
 
-> **NOTE-3** 
+> **NOTE-3** <br />
 > String literals can be delimited with backticks. But this is more than string literal syntax because these **template literals** can include arbitrary Javascript expressions.
 
 
@@ -54,9 +54,9 @@ function Book(title, author, year) {
 }
 const book = new Book('Javascript', 'Brenden Eich', 1993);
 ```
-> **NOTE-4**
-> The `new` keyword create and initilized a new object. it must be followed by a function that called `constructor` and serve to initilize a newly created object.
-> Javascript includes constructors for its built-in types, such as :
+> **NOTE-4** <br />
+> The `new` keyword create and initilized a new object. it must be followed by a function that called `constructor` and serve to initilize a newly created object.<br />
+> Javascript includes constructors for its built-in types, such as:<br />
 > `new Object()`, `new String()`, `new Date()`, or `new Custom_Construcor()`
 
 
@@ -70,14 +70,14 @@ Book.prototype.getSummary = function() {
 }
 ```
 
-> **NOTE-5** 
-> Javascript does not provide a class implementation per se (the `class` in ES6 is just a syntactical sugar or convenient syntax), so Javascript still remains **prototype-based**.
-> **Prototype** is an object that is associated with every function and object by default in JavaScript.
-> Tath means Javascript has only one construct for inheritance and that is `objects`.
+> **NOTE-5** <br />
+> Javascript does not provide a class implementation per se (the `class` in ES6 is just a syntactical sugar or convenient syntax), so Javascript still remains **prototype-based**.<br />
+> **Prototype** is an object that is associated with every function and object by default in JavaScript.<br />
+> That means Javascript has only one construct for inheritance and that is `objects`.<br />
 > Each object has a `prototype` to link and inherit some properties and methods from another object and the object prototype has a prototype of its own, and so on until an object is reached with `null` as its prototype.
-> This linked series of prototype objects is known as a **prototype chain**.
-> ` Book → Book.prototype → Object.prototype → null `
-> ` Date → Date.prototype → Object.prototype → null `
+> This linked series of prototype objects is known as a **prototype chain**.<br />
+> ` Book → Book.prototype → Object.prototype → null ` <br />
+> ` Date → Date.prototype → Object.prototype → null ` <br />
 > <div style="color:red;"><b>Tip: </b>Object.prototype is one of rare objects that has no property and it doesn't inherit any properties.</div>
 
 
@@ -85,6 +85,6 @@ Book.prototype.getSummary = function() {
 - For inheritance, we just use `call()` methods. but this method is just for inheriting keys and values of an object.
 - For inheriting prototypes, we can use `Object.create()` method.
 
-> **NOTE-6**
-> There is 2 methods for creating objetcs, whith `new` keyword or `Object.create()`.
+> **NOTE-6** <br />
+> There is 2 methods for creating objetcs, whith `new` keyword or `Object.create()`.<br />
 > As we told before, we use `Object.create()` for inheriting prototypes but it's also another method for creating objects.
