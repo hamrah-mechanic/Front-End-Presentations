@@ -1,0 +1,1 @@
+This repository is a bunch of presentations and essays with code examples about programming but mostly javascript.
