@@ -8,24 +8,24 @@ Book.prototype.getSummary = function () {
 }
 
 /*************************************************************/
-//inheritance
+//Inheritance
 function Magazine(title, author, year, month) {
     Book.call(this, title, author, year);
     this.month = month;
 }
 
-//instantiate object
+//Instantiate object
 const mag1 = new Magazine('mag1', 'sanaz mahmoudi', '2012', 'fab');
 console.log(mag1);
 // console.log(mag1.getSummary2()); //typeError: is not function
 
 /*************************************************************/
-//inheritance prototypes
+//Inheritance prototypes
 Magazine.prototype = Object.create(Book.prototype);
 const mag2 = new Magazine('mag2', 'sanaz mahmoudi', '2014', 'jan');
 console.log(mag2, mag2.getSummary());
 
 /*************************************************************/
-//use Magazine Construstor
+//Use Magazine Construstor
 Magazine.prototype.constructor = Magazine;
 console.log(mag2);

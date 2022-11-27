@@ -1,4 +1,4 @@
-//constructor - ES5
+//Constructor - ES5
 function Book(title, author, year) {
     this.title = title;
     this.author = author;
@@ -8,7 +8,7 @@ function Book(title, author, year) {
     }
 }
 
-//instantiate an Object
+//Instantiate an Object
 const book2 = new Book('book 2', 'sanaz mahmoudi', '2017');
 const book3 = new Book('book 3', 'sanaz mahmoudi', '2016');
 console.log(book2, book2.title, book2.getSummary());

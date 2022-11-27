@@ -6,11 +6,11 @@ function Book(title, author, year) {
         return `${this.title} was written by ${this.author} in ${this.year}`;
     }
 }
-//instantiate an Object
+//Instantiate an Object
 const book2 = new Book('book 2', 'sanaz mahmoudi', '2017');
 
 /*************************************************************/
-//create prototype - ES5
+//Prototype - ES5
 Book.prototype.getSummary2 = function () {
     return `${this.title} was written by ${this.author} in ${this.year}`;
 }

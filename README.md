@@ -12,7 +12,9 @@ According to the following tables, you can easily access each category.
 |  Title | Description |
 | ------------- | ------------- | 
 | [Generator](https://github.com/HamaDevTeam/presentations/tree/master/JavaScript/Generator/generators) | generator functions and iterator |
-| [OPP/ES5](https://github.com/HamaDevTeam/presentations/tree/master/JavaScript/OPP/ES5) | constructors and prototypes|
+| [OOP/ES5](https://github.com/HamaDevTeam/presentations/tree/master/JavaScript/OOP/ES5) | constructors and prototypes|
+| [OOP/ES6](https://github.com/HamaDevTeam/presentations/tree/master/JavaScript/OOP/ES6) | classes|
+| [OOP/Design Patterns](https://github.com/HamaDevTeam/presentations/tree/master/JavaScript/OOP/Design\ Patterns) | some design patterns|
 
 
 #### Typescript 
